@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="98c-yr-HGu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Saved Media View Controller-->
+        <scene sceneID="eSR-P9-wjn">
+            <objects>
+                <viewController id="zQY-VA-sNv" customClass="SavedMediaViewController" customModule="PhotoVideoEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GGm-Qz-vXg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FBu-Sf-JrA">
+                                <rect key="frame" x="20" y="88" width="374" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o7M-zY-PeS">
+                                    <size key="itemSize" width="174" height="205"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="MediaCell" id="SFA-TN-XON" customClass="MediaCollectionViewCell" customModule="PhotoVideoEditor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="205"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qSk-dq-mgc">
+                                            <rect key="frame" x="0.0" y="0.0" width="174" height="205"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fxy-m8-fV1">
+                                                    <rect key="frame" x="8" y="8" width="158" height="189"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Fxy-m8-fV1" firstAttribute="top" secondItem="qSk-dq-mgc" secondAttribute="top" constant="8" id="HaG-wr-THC"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fxy-m8-fV1" secondAttribute="trailing" constant="8" id="Q4j-g5-sEW"/>
+                                                <constraint firstItem="Fxy-m8-fV1" firstAttribute="leading" secondItem="qSk-dq-mgc" secondAttribute="leading" constant="8" id="VTI-ZC-Ct5"/>
+                                                <constraint firstAttribute="bottom" secondItem="Fxy-m8-fV1" secondAttribute="bottom" constant="8" id="ap9-OI-Gdw"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <size key="customSize" width="174" height="205"/>
+                                        <connections>
+                                            <outlet property="mediaImageView" destination="Fxy-m8-fV1" id="idH-ge-fKK"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="zQY-VA-sNv" id="8Gf-H4-kka"/>
+                                    <outlet property="delegate" destination="zQY-VA-sNv" id="zMk-Z5-Jxg"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KiQ-Ok-ZB7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KiQ-Ok-ZB7" firstAttribute="trailing" secondItem="FBu-Sf-JrA" secondAttribute="trailing" constant="20" id="QBB-rp-j63"/>
+                            <constraint firstItem="FBu-Sf-JrA" firstAttribute="leading" secondItem="KiQ-Ok-ZB7" secondAttribute="leading" constant="20" id="UHv-b2-zri"/>
+                            <constraint firstAttribute="bottom" secondItem="FBu-Sf-JrA" secondAttribute="bottom" id="ooX-kZ-Zo7"/>
+                            <constraint firstItem="FBu-Sf-JrA" firstAttribute="top" secondItem="KiQ-Ok-ZB7" secondAttribute="top" id="sa3-6i-QPX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5ov-R0-wDp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="D9Y-RM-EQC">
+                            <connections>
+                                <action selector="selectNewVideo:" destination="zQY-VA-sNv" id="Aoh-Ee-SOD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mediaCollectionView" destination="FBu-Sf-JrA" id="p18-Mb-UNu"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="l4D-Yu-eFZ"/>
+                        <segue destination="qVE-VS-MnS" kind="show" id="B5Z-cE-n3i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXN-oW-Iwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.768115942029" y="105.80357142857143"/>
+        </scene>
+        <!--Video Editor View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VideoEditorViewController" id="BYZ-38-t0r" customClass="VideoEditorViewController" customModule="PhotoVideoEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GU-LE-ZLV">
+                                <rect key="frame" x="179" y="819" width="56" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crop"/>
+                                <connections>
+                                    <action selector="crop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ks7-ey-UJo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3GU-LE-ZLV" secondAttribute="bottom" constant="12" id="Fts-aK-ogm"/>
+                            <constraint firstItem="3GU-LE-ZLV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nPG-y7-a3b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nxY-81-Sof">
+                        <barButtonItem key="rightBarButtonItem" title="right" id="GcT-oH-zLn">
+                            <connections>
+                                <action selector="rightBarButtonItemAction:" destination="BYZ-38-t0r" id="L8A-Nn-ARd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="rightBarButtonItem" destination="GcT-oH-zLn" id="fzk-i4-dxK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="97.767857142857139"/>
+        </scene>
+        <!--Photo Editor View Controller-->
+        <scene sceneID="Pnh-Yq-Jp4">
+            <objects>
+                <viewController storyboardIdentifier="PhotoEditorViewController" id="qVE-VS-MnS" customClass="PhotoEditorViewController" customModule="PhotoVideoEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UBy-ag-c5v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxh-bP-Vxv">
+                                <rect key="frame" x="179" y="819" width="56" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crop"/>
+                                <connections>
+                                    <action selector="crop:" destination="qVE-VS-MnS" eventType="touchUpInside" id="q68-Tn-rhE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MG2-gj-ExL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MG2-gj-ExL" firstAttribute="bottom" secondItem="bxh-bP-Vxv" secondAttribute="bottom" constant="12" id="fVa-b2-Fhg"/>
+                            <constraint firstItem="bxh-bP-Vxv" firstAttribute="centerX" secondItem="MG2-gj-ExL" secondAttribute="centerX" id="nMX-19-H4m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8uc-3b-KDz">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="2vF-g5-VOi">
+                            <connections>
+                                <action selector="rightBarButtonItemAction:" destination="qVE-VS-MnS" id="Scg-lu-q9y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="rightBarButtonItem" destination="2vF-g5-VOi" id="QDj-0Y-UbC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a96-ol-ZUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="758"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CdK-bU-Vww">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="98c-yr-HGu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PsY-xB-KWs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zQY-VA-sNv" kind="relationship" relationship="rootViewController" id="icz-6j-lEl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngR-ko-LIt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
