@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 import CropViewController
 
-class EditorViewController: UIViewController {
+class EditorViewController: UIViewController, CropViewControllerDelegate {
 
     @IBOutlet weak var rightBarButtonItem: UIBarButtonItem!
     
@@ -28,17 +28,11 @@ class EditorViewController: UIViewController {
         setupUI()
     }
     
-    func setupUI() {
-        
-    }
+    func setupUI() { }
     
-    func exportMedia() {
-        
-    }
+    func exportMedia() { }
     
-    func presentCropViewController() {
-        
-    }
+    func presentCropViewController() { }
     
     @IBAction func rightBarButtonItemAction(_ sender: UIBarButtonItem) {
         exportMedia()

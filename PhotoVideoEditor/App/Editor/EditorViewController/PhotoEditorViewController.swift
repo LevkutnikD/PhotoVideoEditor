@@ -10,11 +10,9 @@ import CropViewController
 
 final class PhotoEditorViewController: EditorViewController {
     
-    
     //MARK: - Variables
     
     private var editingImageView: UIImageView?
-
     
     //MARK: - Setup UI
     
@@ -31,7 +29,6 @@ final class PhotoEditorViewController: EditorViewController {
         editingImageView!.frame = CGRect(x: 15, y: 75, width: self.view.frame.width - 30, height: self.view.frame.height - 150)
         editingImageView?.contentMode = .scaleAspectFit
         self.view.insertSubview(editingImageView!, at: 0)
-        
     }
     
     
@@ -42,7 +39,6 @@ final class PhotoEditorViewController: EditorViewController {
         let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
         present(vc, animated: true)
     }
-    
     
     //MARK: - Present crop VC
     
@@ -61,7 +57,10 @@ final class PhotoEditorViewController: EditorViewController {
     
 }
 
-extension PhotoEditorViewController: CropViewControllerDelegate {
+
+//MARK: - CropViewControllerDelegate
+
+extension PhotoEditorViewController {
     
     func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         

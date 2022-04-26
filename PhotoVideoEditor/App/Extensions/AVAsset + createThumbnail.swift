@@ -11,7 +11,6 @@ import AVFoundation
 extension AVAsset {
     
     func createVideoThumbnail(view: UIView, completion: @escaping (UIImage) -> ()) {
-        
         let asset = self
         let assetImgGenerate = AVAssetImageGenerator(asset: asset)
         assetImgGenerate.appliesPreferredTrackTransform = true
@@ -28,7 +27,6 @@ extension AVAsset {
         catch {
             print(error.localizedDescription)
         }
-
     }
     
 }

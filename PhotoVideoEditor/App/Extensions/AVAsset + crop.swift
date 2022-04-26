@@ -16,7 +16,7 @@ extension AVAsset {
         guard let videoTrack = self.tracks(withMediaType: AVMediaType.video).first else {
             return
         }
-        
+
         let size = videoTrack.naturalSize.applying(videoTrack.preferredTransform)
         
         let originalSize = CGSize(width: abs(size.width), height: abs(size.height))

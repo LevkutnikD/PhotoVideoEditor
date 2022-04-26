@@ -12,7 +12,6 @@ import CoreData
 
 final class VideoEditorViewController: EditorViewController {
     
-    
     //MARK: - Variables
     
     var asset: AVAsset?
@@ -28,7 +27,6 @@ final class VideoEditorViewController: EditorViewController {
         setupUIWithVideo()
     }
     
-    
     //MARK: - Setup UI with AVAsset
     
     func setupUIWithVideo() {
@@ -37,7 +35,6 @@ final class VideoEditorViewController: EditorViewController {
         let documentDirectory = FileManager.default.urls(for: .documentDirectory,
                                                             in: .userDomainMask)[0]
         let videoURL = documentDirectory.appendingPathComponent(selectedMedia.fileName!)
-        
         
         if self.asset == nil {
             self.asset = AVAsset(url: videoURL)
@@ -64,9 +61,7 @@ final class VideoEditorViewController: EditorViewController {
         self.view!.layer.addSublayer(playerLayer!)
         self.view!.layer.insertSublayer(playerLayer!, at: 0)
         player!.play()
-        
     }
-    
     
     //MARK: - Change video after editing
     
@@ -77,7 +72,6 @@ final class VideoEditorViewController: EditorViewController {
             self.setupUIWithVideo()
         }
     }
-    
     
     //MARK: - Present CropVC
     
@@ -92,11 +86,9 @@ final class VideoEditorViewController: EditorViewController {
         
     }
     
-    
     //MARK: - Export media
     
     override func exportMedia() {
-        
         let documentDirectory = FileManager.default.urls(for: .documentDirectory,
                                                             in: .userDomainMask)[0]
         let url = documentDirectory.appendingPathComponent(selectedMedia.fileName!)
@@ -108,10 +100,9 @@ final class VideoEditorViewController: EditorViewController {
 
 //MARK: - Crop delegate
 
-extension VideoEditorViewController: CropViewControllerDelegate {
+extension VideoEditorViewController {
     
     func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
-        
         let documentDirectory = FileManager.default.urls(for: .documentDirectory,
                                                             in: .userDomainMask)[0]
         let num = Int.random(in: 0...Int.max)
@@ -127,7 +118,6 @@ extension VideoEditorViewController: CropViewControllerDelegate {
         }
         
         self.dismiss(animated: true, completion: nil)
-        
     }
     
 }

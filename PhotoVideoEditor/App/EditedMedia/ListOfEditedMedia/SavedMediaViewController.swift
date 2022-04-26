@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 import AVFoundation
 
-class SavedMediaViewController: UIViewController {
+final class SavedMediaViewController: UIViewController {
 
     //MARK: - Outlets
     
@@ -145,7 +145,6 @@ extension SavedMediaViewController: UICollectionViewDelegate {
 extension SavedMediaViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
         let selectedMedia = SavedMedia(context: managedContext)
         var asset: AVAsset?
         

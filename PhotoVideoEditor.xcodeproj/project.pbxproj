@@ -13,8 +13,8 @@
 		7167C8952715C7600015DED9 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167C8942715C7600015DED9 /* MediaType.swift */; };
 		7167C89C2715DC040015DED9 /* AVAsset + resolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167C89B2715DC040015DED9 /* AVAsset + resolution.swift */; };
 		7167C89E2715DD910015DED9 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167C89D2715DD910015DED9 /* StorageManager.swift */; };
-		7167C8A027171D700015DED9 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167C89F27171D700015DED9 /* EditorViewController.swift */; };
 		7167C8A227171D7E0015DED9 /* PhotoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167C8A127171D7E0015DED9 /* PhotoEditorViewController.swift */; };
+		718E359127A038B300DA06BE /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E359027A038B300DA06BE /* EditorViewController.swift */; };
 		718F0FC92714617A00E56104 /* PhotoVideoEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 718F0FC72714617A00E56104 /* PhotoVideoEditor.xcdatamodeld */; };
 		718F0FCB27146E7D00E56104 /* SavedMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F0FCA27146E7D00E56104 /* SavedMediaViewController.swift */; };
 		71F8424E2706222200913CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8424D2706222200913CD9 /* AppDelegate.swift */; };
@@ -34,8 +34,8 @@
 		7167C8942715C7600015DED9 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		7167C89B2715DC040015DED9 /* AVAsset + resolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAsset + resolution.swift"; sourceTree = "<group>"; };
 		7167C89D2715DD910015DED9 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		7167C89F27171D700015DED9 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
 		7167C8A127171D7E0015DED9 /* PhotoEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorViewController.swift; sourceTree = "<group>"; };
+		718E359027A038B300DA06BE /* EditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
 		718F0FC82714617A00E56104 /* PhotoVideoEditor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoVideoEditor.xcdatamodel; sourceTree = "<group>"; };
 		718F0FCA27146E7D00E56104 /* SavedMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMediaViewController.swift; sourceTree = "<group>"; };
 		71F8424A2706222200913CD9 /* PhotoVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,10 +107,8 @@
 		7167C8A5271868F20015DED9 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				71F8424D2706222200913CD9 /* AppDelegate.swift */,
-				71F8424F2706222200913CD9 /* SceneDelegate.swift */,
-				71F842532706222200913CD9 /* Main.storyboard */,
-				718F0FC72714617A00E56104 /* PhotoVideoEditor.xcdatamodeld */,
+				719521BC28132F5900FFDC7C /* Main */,
+				719521BD28132F6C00FFDC7C /* DataModel */,
 				7167C8A3271868590015DED9 /* Managers */,
 				7167C8962715D1D00015DED9 /* EditedMedia */,
 				718F0FC32714441D00E56104 /* Editor */,
@@ -149,11 +147,29 @@
 		718F0FC62714444A00E56104 /* EditorViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7167C89F27171D700015DED9 /* EditorViewController.swift */,
+				718E359027A038B300DA06BE /* EditorViewController.swift */,
 				7167C8A127171D7E0015DED9 /* PhotoEditorViewController.swift */,
 				71F842512706222200913CD9 /* VideoEditorViewController.swift */,
 			);
 			path = EditorViewController;
+			sourceTree = "<group>";
+		};
+		719521BC28132F5900FFDC7C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				71F8424D2706222200913CD9 /* AppDelegate.swift */,
+				71F8424F2706222200913CD9 /* SceneDelegate.swift */,
+				71F842532706222200913CD9 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		719521BD28132F6C00FFDC7C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				718F0FC72714617A00E56104 /* PhotoVideoEditor.xcdatamodeld */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		71F842412706222200913CD9 = {
@@ -323,7 +339,7 @@
 				7167C8A227171D7E0015DED9 /* PhotoEditorViewController.swift in Sources */,
 				71F8424E2706222200913CD9 /* AppDelegate.swift in Sources */,
 				71F842502706222200913CD9 /* SceneDelegate.swift in Sources */,
-				7167C8A027171D700015DED9 /* EditorViewController.swift in Sources */,
+				718E359127A038B300DA06BE /* EditorViewController.swift in Sources */,
 				7167C893271587110015DED9 /* MediaCollectionViewCell.swift in Sources */,
 				718F0FCB27146E7D00E56104 /* SavedMediaViewController.swift in Sources */,
 				718F0FC92714617A00E56104 /* PhotoVideoEditor.xcdatamodeld in Sources */,
@@ -486,6 +502,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,6 +532,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

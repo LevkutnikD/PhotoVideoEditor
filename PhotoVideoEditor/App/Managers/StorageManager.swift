@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class StorageManager {
+final class StorageManager {
     
     private let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
