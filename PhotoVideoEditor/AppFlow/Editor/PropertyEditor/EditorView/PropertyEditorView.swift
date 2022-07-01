@@ -66,7 +66,9 @@ extension PropertyEditorView: UITableViewDataSource {
 }
 
 extension PropertyEditorView: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return heightOfSinglePropertyEditor
     }
+    
 }

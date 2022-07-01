@@ -8,6 +8,7 @@
 import Foundation
 
 enum PropertyCollection {
+    
     case sharpness
     case highlights
     case shadows
@@ -61,6 +62,7 @@ enum PropertyCollection {
                             defaultValue: 0.0)
         }
     }
+    
 }
 
 

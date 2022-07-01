@@ -8,6 +8,7 @@
 import Foundation
 
 class Property {
+    
     let title: String
     let filter: String
     let propertyKey: String
@@ -25,4 +26,5 @@ class Property {
         self.defaultValue = defaultValue
         self.currentValue = defaultValue
     }
+    
 }

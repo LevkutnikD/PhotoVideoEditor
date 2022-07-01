@@ -19,7 +19,7 @@ class PropertyEditor {
     
     var currentlyChangedProperty: Property? {
         didSet {
-            guard let currentlyChangedProperty = currentlyChangedProperty else { return }
+            guard let _ = currentlyChangedProperty else { return }
             editImage()
         }
     }
@@ -32,20 +32,6 @@ class PropertyEditor {
         self.editingImage = image
     }
     
-//    func editImage() {
-//        DispatchQueue.global(qos: .userInteractive).async {
-//            var filteredImage: UIImage = self.editingImage
-//            for property in self.usedProperties {
-//                if let image = self.edit(image: filteredImage, withProperty: property) {
-//                    filteredImage = image
-//                }
-//            }
-//            DispatchQueue.main.async {
-//                self.imageEditedCompletion?(filteredImage)
-//            }
-//        }
-//    }
-//
     func editImage() {
         DispatchQueue.global(qos: .userInteractive).async {
             var filteredImage = CIImage(image: self.editingImage)
@@ -67,29 +53,5 @@ class PropertyEditor {
         filter.setValue(property.currentValue, forKey: property.propertyKey)
         return filter.outputImage
     }
-    
-//    func edit(image: UIImage, withProperty property: Property) -> UIImage? {
-//        guard let sourceImage = CIImage(image: image), let filter = CIFilter(name: property.filter) else { return nil }
-//
-//        filter.setValue(sourceImage, forKey: kCIInputImageKey)
-//        filter.setValue(property.currentValue, forKey: property.propertyKey)
-//        let output = filter.outputImage
-//        guard let output = filter.outputImage else { return nil }
-//        guard let outputCGImage = CIContext().createCGImage(output, from: output.extent) else { return nil }
-//        let filteredImage = UIImage(cgImage: outputCGImage, scale: editingImage.scale, orientation: editingImage.imageOrientation)
-//
-//        return filteredImage
-//    }
-    
-    /*
-     let currentFilter = CIFilter(name: "CIBoxBlur")
-         currentFilter!.setValue(CIImage(image: imageView.image!), forKey: kCIInputImageKey)
-         currentFilter!.setValue(currentValue, forKey: kCIInputRadiusKey)
 
-         let cropFilter = CIFilter(name: "CICrop")
-         cropFilter!.setValue(currentFilter!.outputImage, forKey: kCIInputImageKey)
-         cropFilter!.setValue(CIVector(cgRect: (CIImage(image: imageView.image!)?.extent)!), forKey: "inputRectangle")
-
-         let output = cropFil
-     */
 }

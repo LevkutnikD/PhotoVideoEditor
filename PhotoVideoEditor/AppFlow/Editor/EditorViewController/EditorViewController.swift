@@ -74,4 +74,5 @@ class EditorViewController: UIViewController, CropViewControllerDelegate {
         setupPropertyEditor()
         presentPropertyEditing()
     }
+    
 }
