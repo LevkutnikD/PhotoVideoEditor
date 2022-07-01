@@ -22,7 +22,7 @@
 		71B1A66A281876CF00BCAF5A /* PropertyEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B1A669281876CF00BCAF5A /* PropertyEditorView.swift */; };
 		71B1A67E2818916000BCAF5A /* PropertyEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B1A67D2818916000BCAF5A /* PropertyEditorView.xib */; };
 		71BD44E02819C597008EDB32 /* PropertyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD44DF2819C597008EDB32 /* PropertyCollection.swift */; };
-		71BD44E22819C5B4008EDB32 /* PropertyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD44E12819C5B4008EDB32 /* PropertyComponents.swift */; };
+		71BD44E22819C5B4008EDB32 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD44E12819C5B4008EDB32 /* Property.swift */; };
 		71BD44E52819D76D008EDB32 /* PropertySetupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD44E32819D76D008EDB32 /* PropertySetupTableViewCell.swift */; };
 		71BD44E62819D76D008EDB32 /* PropertySetupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71BD44E42819D76D008EDB32 /* PropertySetupTableViewCell.xib */; };
 		71F8424E2706222200913CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8424D2706222200913CD9 /* AppDelegate.swift */; };
@@ -51,7 +51,7 @@
 		71B1A669281876CF00BCAF5A /* PropertyEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyEditorView.swift; sourceTree = "<group>"; };
 		71B1A67D2818916000BCAF5A /* PropertyEditorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyEditorView.xib; sourceTree = "<group>"; };
 		71BD44DF2819C597008EDB32 /* PropertyCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCollection.swift; sourceTree = "<group>"; };
-		71BD44E12819C5B4008EDB32 /* PropertyComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyComponents.swift; sourceTree = "<group>"; };
+		71BD44E12819C5B4008EDB32 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		71BD44E32819D76D008EDB32 /* PropertySetupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertySetupTableViewCell.swift; sourceTree = "<group>"; };
 		71BD44E42819D76D008EDB32 /* PropertySetupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertySetupTableViewCell.xib; sourceTree = "<group>"; };
 		71F8424A2706222200913CD9 /* PhotoVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,7 +208,7 @@
 			children = (
 				71A2897628198E540023A6E3 /* ProperyEditor.swift */,
 				71BD44DF2819C597008EDB32 /* PropertyCollection.swift */,
-				71BD44E12819C5B4008EDB32 /* PropertyComponents.swift */,
+				71BD44E12819C5B4008EDB32 /* Property.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -419,7 +419,7 @@
 				718E359127A038B300DA06BE /* EditorViewController.swift in Sources */,
 				7167C893271587110015DED9 /* MediaCollectionViewCell.swift in Sources */,
 				718F0FCB27146E7D00E56104 /* SavedMediaViewController.swift in Sources */,
-				71BD44E22819C5B4008EDB32 /* PropertyComponents.swift in Sources */,
+				71BD44E22819C5B4008EDB32 /* Property.swift in Sources */,
 				71BD44E02819C597008EDB32 /* PropertyCollection.swift in Sources */,
 				718F0FC92714617A00E56104 /* PhotoVideoEditor.xcdatamodeld in Sources */,
 				710D260327107978003D0124 /* AVAsset + createThumbnail.swift in Sources */,
