@@ -76,9 +76,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="mediaCollectionView" destination="FBu-Sf-JrA" id="p18-Mb-UNu"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="l4D-Yu-eFZ"/>
-                        <segue destination="qVE-VS-MnS" kind="show" id="B5Z-cE-n3i"/>
+                        <outlet property="savedMediaCollectionView" destination="FBu-Sf-JrA" id="p18-Mb-UNu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXN-oW-Iwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -93,20 +91,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GU-LE-ZLV">
-                                <rect key="frame" x="179" y="819" width="56" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Crop"/>
-                                <connections>
-                                    <action selector="crop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ks7-ey-UJo"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="NoW-Hm-1aq">
+                                <rect key="frame" x="120" y="821" width="174" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufp-iM-Sl4">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Property"/>
+                                        <connections>
+                                            <action selector="propertyEditing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i15-9o-Oaa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GU-LE-ZLV">
+                                        <rect key="frame" x="94" y="0.0" width="80" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Crop"/>
+                                        <connections>
+                                            <action selector="crop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ks7-ey-UJo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3GU-LE-ZLV" secondAttribute="bottom" constant="12" id="Fts-aK-ogm"/>
-                            <constraint firstItem="3GU-LE-ZLV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nPG-y7-a3b"/>
+                            <constraint firstItem="NoW-Hm-1aq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7aJ-68-ewS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NoW-Hm-1aq" secondAttribute="bottom" constant="10" id="NRi-bA-Zlh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nxY-81-Sof">
@@ -132,20 +143,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxh-bP-Vxv">
-                                <rect key="frame" x="179" y="819" width="56" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Crop"/>
-                                <connections>
-                                    <action selector="crop:" destination="qVE-VS-MnS" eventType="touchUpInside" id="q68-Tn-rhE"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="BvT-aL-1bE">
+                                <rect key="frame" x="120" y="821" width="174" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80F-NK-Eq5">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Property"/>
+                                        <connections>
+                                            <action selector="propertyEditing:" destination="qVE-VS-MnS" eventType="touchUpInside" id="PCW-Vn-MbR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxh-bP-Vxv">
+                                        <rect key="frame" x="94" y="0.0" width="80" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Crop"/>
+                                        <connections>
+                                            <action selector="crop:" destination="qVE-VS-MnS" eventType="touchUpInside" id="q68-Tn-rhE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MG2-gj-ExL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MG2-gj-ExL" firstAttribute="bottom" secondItem="bxh-bP-Vxv" secondAttribute="bottom" constant="12" id="fVa-b2-Fhg"/>
-                            <constraint firstItem="bxh-bP-Vxv" firstAttribute="centerX" secondItem="MG2-gj-ExL" secondAttribute="centerX" id="nMX-19-H4m"/>
+                            <constraint firstItem="BvT-aL-1bE" firstAttribute="centerX" secondItem="MG2-gj-ExL" secondAttribute="centerX" id="nAB-Uq-hN9"/>
+                            <constraint firstItem="MG2-gj-ExL" firstAttribute="bottom" secondItem="BvT-aL-1bE" secondAttribute="bottom" constant="10" id="uV5-3d-jDf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8uc-3b-KDz">

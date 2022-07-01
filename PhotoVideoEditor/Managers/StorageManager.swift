@@ -2,15 +2,22 @@
 //  StorageManager.swift
 //  PhotoVideoEditor
 //
-//  Created by Dima Levkutnyk on 12.10.2021.
+//  Created by Dmitriy Levkutnyk on 12.10.2021.
 //
 
 import UIKit
 import CoreData
 
-final class StorageManager {
+protocol StorageManager {
+    func save()
+    func save(video: SavedMedia, withName name: String, preview: UIImage)
+    func removeFromDocumentDirectory(itemWithName name: String)
+    func fetchSavedMedia() -> [SavedMedia]
+}
+
+final class StorageManagerImpl: StorageManager {
     
-    private let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     func save() {
         do {
@@ -27,7 +34,7 @@ final class StorageManager {
         save()
     }
     
-    func removeItemFromDocumentDirectory(withName name: String) {
+    func removeFromDocumentDirectory(itemWithName name: String) {
         let documentDirectory = FileManager.default.urls(for: .documentDirectory,
                                                             in: .userDomainMask)[0]
         do {

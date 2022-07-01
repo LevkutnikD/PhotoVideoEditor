@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  PhotoVideoEditor
 //
-//  Created by Dmytriy Levkutnyk on 30.09.2021.
+//  Created by Dmitriy Levkutnyk on 30.09.2021.
 //
 
 import UIKit

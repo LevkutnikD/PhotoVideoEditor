@@ -2,7 +2,7 @@
 //  AVAsset + resolution.swift
 //  PhotoVideoEditor
 //
-//  Created by Dima Levkutnyk on 12.10.2021.
+//  Created by Dmitriy Levkutnyk on 12.10.2021.
 //
 
 import Foundation

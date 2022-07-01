@@ -2,17 +2,19 @@
 //  PhotoEditorViewController.swift
 //  PhotoVideoEditor
 //
-//  Created by Dima Levkutnyk on 13.10.2021.
+//  Created by Dmitriy Levkutnyk on 13.10.2021.
 //
 
 import UIKit
 import CropViewController
+import CoreImage
 
 final class PhotoEditorViewController: EditorViewController {
     
     //MARK: - Variables
     
     private var editingImageView: UIImageView?
+    
     
     //MARK: - Setup UI
     
@@ -40,6 +42,7 @@ final class PhotoEditorViewController: EditorViewController {
         present(vc, animated: true)
     }
     
+    
     //MARK: - Present crop VC
     
     override func presentCropViewController() {
@@ -52,6 +55,17 @@ final class PhotoEditorViewController: EditorViewController {
                 cropViewController.delegate = self
                 self.present(cropViewController, animated: true, completion: nil)
             }
+        }
+    }
+    
+    //MARK: - Property editor
+    
+    override func setupPropertyEditor() {
+        guard let editingImage = editingImageView?.image else { return }
+        propertyEditor = PropertyEditor(image: editingImage)
+        propertyEditor?.imageEditedCompletion = { [weak self] image in
+            guard let self = self else { return }
+            self.editingImageView?.image = image
         }
     }
     

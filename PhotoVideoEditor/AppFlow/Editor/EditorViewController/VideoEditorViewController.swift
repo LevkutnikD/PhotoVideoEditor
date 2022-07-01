@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  VideoEditor
 //
-//  Created by Dima Levkutnik on 30.09.2021.
+//  Created by Dmitriy Levkutnik on 30.09.2021.
 //
 
 import UIKit
@@ -21,11 +21,13 @@ final class VideoEditorViewController: EditorViewController {
     private var defaultPlayerLayerFrame: CGRect!
     private var originalMediaSize: CGSize!
     
+    
     //MARK: - Setup UI
     
     override func setupUI() {
         setupUIWithVideo()
     }
+    
     
     //MARK: - Setup UI with AVAsset
     
@@ -63,6 +65,7 @@ final class VideoEditorViewController: EditorViewController {
         player!.play()
     }
     
+    
     //MARK: - Change video after editing
     
     func changeCurrentVideo(onVideoAtPath path: URL) {
@@ -72,6 +75,7 @@ final class VideoEditorViewController: EditorViewController {
             self.setupUIWithVideo()
         }
     }
+    
     
     //MARK: - Present CropVC
     
@@ -85,6 +89,7 @@ final class VideoEditorViewController: EditorViewController {
         }
         
     }
+    
     
     //MARK: - Export media
     
@@ -110,7 +115,7 @@ extension VideoEditorViewController {
         
         asset!.cropVideoTrack(at: 0, cropRect: cropRect, angle: angle, outputURL: fileName, videoWidth: self.originalMediaSize.width, videoHeight: self.originalMediaSize.height) { [weak self] _ in
             guard let self = self else { return }
-            self.storageManager.removeItemFromDocumentDirectory(withName: self.selectedMedia.fileName!)
+            self.storageManager.removeFromDocumentDirectory(itemWithName: self.selectedMedia.fileName!)
             self.changeCurrentVideo(onVideoAtPath: fileName)
             self.asset = AVAsset(url: fileName)
             

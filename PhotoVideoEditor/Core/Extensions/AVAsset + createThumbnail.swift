@@ -2,7 +2,7 @@
 //  AVAsset + createThumbnail.swift
 //  PhotoVideoEditor
 //
-//  Created by Dima Levkutnyk on 08.10.2021.
+//  Created by Dmitriy Levkutnyk on 08.10.2021.
 //
 
 import UIKit

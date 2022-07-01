@@ -9,14 +9,22 @@
 /* Begin PBXBuildFile section */
 		537F93CE722E33CB7A54F611 /* Pods_PhotoVideoEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17898F2197882745EFCBBF63 /* Pods_PhotoVideoEditor.framework */; };
 		710D260327107978003D0124 /* AVAsset + createThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D260227107978003D0124 /* AVAsset + createThumbnail.swift */; };
+		7132DFD4284806C400997897 /* MediaSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132DFD3284806C400997897 /* MediaSelection.swift */; };
 		7167C893271587110015DED9 /* MediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167C892271587110015DED9 /* MediaCollectionViewCell.swift */; };
-		7167C8952715C7600015DED9 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167C8942715C7600015DED9 /* MediaType.swift */; };
 		7167C89C2715DC040015DED9 /* AVAsset + resolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167C89B2715DC040015DED9 /* AVAsset + resolution.swift */; };
 		7167C89E2715DD910015DED9 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167C89D2715DD910015DED9 /* StorageManager.swift */; };
 		7167C8A227171D7E0015DED9 /* PhotoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167C8A127171D7E0015DED9 /* PhotoEditorViewController.swift */; };
+		718758112846B7EB004FB54D /* ListOfMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718758102846B7EB004FB54D /* ListOfMedia.swift */; };
 		718E359127A038B300DA06BE /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E359027A038B300DA06BE /* EditorViewController.swift */; };
 		718F0FC92714617A00E56104 /* PhotoVideoEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 718F0FC72714617A00E56104 /* PhotoVideoEditor.xcdatamodeld */; };
 		718F0FCB27146E7D00E56104 /* SavedMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F0FCA27146E7D00E56104 /* SavedMediaViewController.swift */; };
+		71A2897728198E540023A6E3 /* ProperyEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2897628198E540023A6E3 /* ProperyEditor.swift */; };
+		71B1A66A281876CF00BCAF5A /* PropertyEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B1A669281876CF00BCAF5A /* PropertyEditorView.swift */; };
+		71B1A67E2818916000BCAF5A /* PropertyEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B1A67D2818916000BCAF5A /* PropertyEditorView.xib */; };
+		71BD44E02819C597008EDB32 /* PropertyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD44DF2819C597008EDB32 /* PropertyCollection.swift */; };
+		71BD44E22819C5B4008EDB32 /* PropertyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD44E12819C5B4008EDB32 /* PropertyComponents.swift */; };
+		71BD44E52819D76D008EDB32 /* PropertySetupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD44E32819D76D008EDB32 /* PropertySetupTableViewCell.swift */; };
+		71BD44E62819D76D008EDB32 /* PropertySetupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71BD44E42819D76D008EDB32 /* PropertySetupTableViewCell.xib */; };
 		71F8424E2706222200913CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8424D2706222200913CD9 /* AppDelegate.swift */; };
 		71F842502706222200913CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8424F2706222200913CD9 /* SceneDelegate.swift */; };
 		71F842522706222200913CD9 /* VideoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F842512706222200913CD9 /* VideoEditorViewController.swift */; };
@@ -30,14 +38,22 @@
 		17898F2197882745EFCBBF63 /* Pods_PhotoVideoEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoVideoEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F90A767D1AF2FBFCC158F0 /* Pods-PhotoVideoEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoVideoEditor.release.xcconfig"; path = "Target Support Files/Pods-PhotoVideoEditor/Pods-PhotoVideoEditor.release.xcconfig"; sourceTree = "<group>"; };
 		710D260227107978003D0124 /* AVAsset + createThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAsset + createThumbnail.swift"; sourceTree = "<group>"; };
+		7132DFD3284806C400997897 /* MediaSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSelection.swift; sourceTree = "<group>"; };
 		7167C892271587110015DED9 /* MediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCollectionViewCell.swift; sourceTree = "<group>"; };
-		7167C8942715C7600015DED9 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		7167C89B2715DC040015DED9 /* AVAsset + resolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAsset + resolution.swift"; sourceTree = "<group>"; };
 		7167C89D2715DD910015DED9 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		7167C8A127171D7E0015DED9 /* PhotoEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorViewController.swift; sourceTree = "<group>"; };
+		718758102846B7EB004FB54D /* ListOfMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMedia.swift; sourceTree = "<group>"; };
 		718E359027A038B300DA06BE /* EditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
 		718F0FC82714617A00E56104 /* PhotoVideoEditor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoVideoEditor.xcdatamodel; sourceTree = "<group>"; };
 		718F0FCA27146E7D00E56104 /* SavedMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMediaViewController.swift; sourceTree = "<group>"; };
+		71A2897628198E540023A6E3 /* ProperyEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProperyEditor.swift; sourceTree = "<group>"; };
+		71B1A669281876CF00BCAF5A /* PropertyEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyEditorView.swift; sourceTree = "<group>"; };
+		71B1A67D2818916000BCAF5A /* PropertyEditorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyEditorView.xib; sourceTree = "<group>"; };
+		71BD44DF2819C597008EDB32 /* PropertyCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCollection.swift; sourceTree = "<group>"; };
+		71BD44E12819C5B4008EDB32 /* PropertyComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyComponents.swift; sourceTree = "<group>"; };
+		71BD44E32819D76D008EDB32 /* PropertySetupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertySetupTableViewCell.swift; sourceTree = "<group>"; };
+		71BD44E42819D76D008EDB32 /* PropertySetupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertySetupTableViewCell.xib; sourceTree = "<group>"; };
 		71F8424A2706222200913CD9 /* PhotoVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F8424D2706222200913CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71F8424F2706222200913CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,9 +78,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7132DFCE2847FED300997897 /* AppFlow */ = {
+			isa = PBXGroup;
+			children = (
+				7132DFCF2848002400997897 /* Storyboard */,
+				7167C8962715D1D00015DED9 /* EditedMedia */,
+				718F0FC32714441D00E56104 /* Editor */,
+			);
+			path = AppFlow;
+			sourceTree = "<group>";
+		};
+		7132DFCF2848002400997897 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				71F842532706222200913CD9 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7132DFD02848006800997897 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				718F0FC42714443000E56104 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		7167C8962715D1D00015DED9 /* EditedMedia */ = {
 			isa = PBXGroup;
 			children = (
+				718758122846BE07004FB54D /* Model */,
 				7167C8972715D1E60015DED9 /* ListOfEditedMedia */,
 				7167C8982715D1F10015DED9 /* View */,
 			);
@@ -95,33 +138,30 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		7167C8A4271868770015DED9 /* SupportingFiles */ = {
+		7167C8A4271868770015DED9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				71F842562706222500913CD9 /* Assets.xcassets */,
 				71F842582706222500913CD9 /* LaunchScreen.storyboard */,
+				71F8425B2706222500913CD9 /* Info.plist */,
 			);
-			path = SupportingFiles;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		7167C8A5271868F20015DED9 /* App */ = {
+		718758122846BE07004FB54D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				719521BC28132F5900FFDC7C /* Main */,
-				719521BD28132F6C00FFDC7C /* DataModel */,
-				7167C8A3271868590015DED9 /* Managers */,
-				7167C8962715D1D00015DED9 /* EditedMedia */,
-				718F0FC32714441D00E56104 /* Editor */,
-				718F0FC42714443000E56104 /* Extensions */,
+				718758102846B7EB004FB54D /* ListOfMedia.swift */,
+				7132DFD3284806C400997897 /* MediaSelection.swift */,
 			);
-			path = App;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		718F0FC32714441D00E56104 /* Editor */ = {
 			isa = PBXGroup;
 			children = (
+				71B1A66B281876E900BCAF5A /* PropertyEditor */,
 				718F0FC62714444A00E56104 /* EditorViewController */,
-				718F0FC52714443F00E56104 /* Model */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -136,14 +176,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		718F0FC52714443F00E56104 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7167C8942715C7600015DED9 /* MediaType.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		718F0FC62714444A00E56104 /* EditorViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,14 +186,13 @@
 			path = EditorViewController;
 			sourceTree = "<group>";
 		};
-		719521BC28132F5900FFDC7C /* Main */ = {
+		719521BC28132F5900FFDC7C /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				71F8424D2706222200913CD9 /* AppDelegate.swift */,
 				71F8424F2706222200913CD9 /* SceneDelegate.swift */,
-				71F842532706222200913CD9 /* Main.storyboard */,
 			);
-			path = Main;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		719521BD28132F6C00FFDC7C /* DataModel */ = {
@@ -170,6 +201,44 @@
 				718F0FC72714617A00E56104 /* PhotoVideoEditor.xcdatamodeld */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		71A2897828198E5C0023A6E3 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				71A2897628198E540023A6E3 /* ProperyEditor.swift */,
+				71BD44DF2819C597008EDB32 /* PropertyCollection.swift */,
+				71BD44E12819C5B4008EDB32 /* PropertyComponents.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		71A2897928198E8E0023A6E3 /* EditorView */ = {
+			isa = PBXGroup;
+			children = (
+				71B1A669281876CF00BCAF5A /* PropertyEditorView.swift */,
+				71B1A67D2818916000BCAF5A /* PropertyEditorView.xib */,
+				71B1A67428187BBC00BCAF5A /* PropertyEditorViewComponents */,
+			);
+			path = EditorView;
+			sourceTree = "<group>";
+		};
+		71B1A66B281876E900BCAF5A /* PropertyEditor */ = {
+			isa = PBXGroup;
+			children = (
+				71A2897828198E5C0023A6E3 /* Editor */,
+				71A2897928198E8E0023A6E3 /* EditorView */,
+			);
+			path = PropertyEditor;
+			sourceTree = "<group>";
+		};
+		71B1A67428187BBC00BCAF5A /* PropertyEditorViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				71BD44E32819D76D008EDB32 /* PropertySetupTableViewCell.swift */,
+				71BD44E42819D76D008EDB32 /* PropertySetupTableViewCell.xib */,
+			);
+			path = PropertyEditorViewComponents;
 			sourceTree = "<group>";
 		};
 		71F842412706222200913CD9 = {
@@ -193,9 +262,12 @@
 		71F8424C2706222200913CD9 /* PhotoVideoEditor */ = {
 			isa = PBXGroup;
 			children = (
-				7167C8A5271868F20015DED9 /* App */,
-				7167C8A4271868770015DED9 /* SupportingFiles */,
-				71F8425B2706222500913CD9 /* Info.plist */,
+				719521BC28132F5900FFDC7C /* Application */,
+				719521BD28132F6C00FFDC7C /* DataModel */,
+				7167C8A3271868590015DED9 /* Managers */,
+				7132DFCE2847FED300997897 /* AppFlow */,
+				7132DFD02848006800997897 /* Core */,
+				7167C8A4271868770015DED9 /* Resources */,
 			);
 			path = PhotoVideoEditor;
 			sourceTree = "<group>";
@@ -280,6 +352,8 @@
 				71F8425A2706222500913CD9 /* LaunchScreen.storyboard in Resources */,
 				71F842572706222500913CD9 /* Assets.xcassets in Resources */,
 				71F842552706222200913CD9 /* Main.storyboard in Resources */,
+				71BD44E62819D76D008EDB32 /* PropertySetupTableViewCell.xib in Resources */,
+				71B1A67E2818916000BCAF5A /* PropertyEditorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,19 +406,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7167C8952715C7600015DED9 /* MediaType.swift in Sources */,
 				71F842522706222200913CD9 /* VideoEditorViewController.swift in Sources */,
+				71B1A66A281876CF00BCAF5A /* PropertyEditorView.swift in Sources */,
 				7167C89C2715DC040015DED9 /* AVAsset + resolution.swift in Sources */,
 				7167C89E2715DD910015DED9 /* StorageManager.swift in Sources */,
 				7167C8A227171D7E0015DED9 /* PhotoEditorViewController.swift in Sources */,
 				71F8424E2706222200913CD9 /* AppDelegate.swift in Sources */,
 				71F842502706222200913CD9 /* SceneDelegate.swift in Sources */,
+				7132DFD4284806C400997897 /* MediaSelection.swift in Sources */,
+				71BD44E52819D76D008EDB32 /* PropertySetupTableViewCell.swift in Sources */,
+				718758112846B7EB004FB54D /* ListOfMedia.swift in Sources */,
 				718E359127A038B300DA06BE /* EditorViewController.swift in Sources */,
 				7167C893271587110015DED9 /* MediaCollectionViewCell.swift in Sources */,
 				718F0FCB27146E7D00E56104 /* SavedMediaViewController.swift in Sources */,
+				71BD44E22819C5B4008EDB32 /* PropertyComponents.swift in Sources */,
+				71BD44E02819C597008EDB32 /* PropertyCollection.swift in Sources */,
 				718F0FC92714617A00E56104 /* PhotoVideoEditor.xcdatamodeld in Sources */,
 				710D260327107978003D0124 /* AVAsset + createThumbnail.swift in Sources */,
 				71F8426627062ADA00913CD9 /* AVAsset + crop.swift in Sources */,
+				71A2897728198E540023A6E3 /* ProperyEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +576,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3EUV3J8K83;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoVideoEditor/Info.plist;
+				INFOPLIST_FILE = PhotoVideoEditor/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -526,7 +606,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3EUV3J8K83;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoVideoEditor/Info.plist;
+				INFOPLIST_FILE = PhotoVideoEditor/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
